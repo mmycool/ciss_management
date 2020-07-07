@@ -1,0 +1,80 @@
+{
+ "creation": "2020-06-29 12:11:29.439505",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "group_name",
+  "county",
+  "sub_county",
+  "ward",
+  "gps_location",
+  "activity_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Group Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "County",
+   "options": "Counties",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sub_county",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub County",
+   "options": "Sub_Counties",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "label": "Ward",
+   "options": "Ward",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gps_location",
+   "fieldtype": "Geolocation",
+   "label": "GPS Location"
+  },
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Link",
+   "label": "Group Activities",
+   "options": "Activity Master"
+  }
+ ],
+ "modified": "2020-07-08 00:15:28.019742",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "CISS Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
