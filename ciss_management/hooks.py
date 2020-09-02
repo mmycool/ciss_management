@@ -126,4 +126,3 @@ app_license = "MIT"
 # override_doctype_dashboards = {
 # 	"Task": "ciss_management.task.get_dashboard_data"
 # }
-

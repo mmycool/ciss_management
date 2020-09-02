@@ -1,43 +1,47 @@
 {
- "autoname": "field:sub_county",
- "creation": "2020-06-29 10:33:10.501172",
+ "autoname": "field:county_name",
+ "creation": "2020-06-28 23:14:52.571766",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sub_county",
-  "county",
-  "sub_county_summary"
+  "county_code",
+  "county_name",
+  "county_summary"
  ],
  "fields": [
   {
-   "fieldname": "sub_county",
-   "fieldtype": "Data",
+   "allow_in_quick_entry": 1,
+   "fieldname": "county_code",
+   "fieldtype": "Int",
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Sub County Name",
+   "label": "County Code",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "county_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "County Name",
    "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "county",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "County",
-   "options": "Counties",
-   "reqd": 1
-  },
-  {
-   "fieldname": "sub_county_summary",
-   "fieldtype": "Text",
-   "label": "Sub County Summary"
+   "fieldname": "county_summary",
+   "fieldtype": "Text Editor",
+   "label": "County Summary"
   }
  ],
- "modified": "2020-08-26 01:45:18.578143",
+ "modified": "2020-08-26 01:43:17.842865",
  "modified_by": "Administrator",
  "module": "CISS Management",
- "name": "Sub_Counties",
+ "name": "Counties",
+ "nsm_parent_field": "parent_counties",
  "owner": "Administrator",
  "permissions": [
   {
@@ -49,6 +53,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
    "share": 1,
    "write": 1
   },
@@ -78,9 +94,9 @@
   }
  ],
  "quick_entry": 1,
- "search_fields": "sub_county, county",
+ "search_fields": "county_code, county_name",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "sub_county",
+ "title_field": "county_name",
  "track_changes": 1
 }

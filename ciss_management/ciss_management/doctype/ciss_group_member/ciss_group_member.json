@@ -1,43 +1,61 @@
 {
- "autoname": "field:sub_county",
- "creation": "2020-06-29 10:33:10.501172",
+ "autoname": "field:identity",
+ "creation": "2020-07-11 03:38:24.487410",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sub_county",
-  "county",
-  "sub_county_summary"
+  "identity",
+  "member_name",
+  "disability",
+  "column_break_4",
+  "gender",
+  "phone_number"
  ],
  "fields": [
   {
-   "fieldname": "sub_county",
+   "fieldname": "member_name",
    "fieldtype": "Data",
    "in_filter": 1,
    "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Sub County Name",
+   "label": "Member Name",
    "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "county",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "County",
-   "options": "Counties",
-   "reqd": 1
+   "default": "0",
+   "fieldname": "disability",
+   "fieldtype": "Check",
+   "label": "Any form of Disability?"
   },
   {
-   "fieldname": "sub_county_summary",
-   "fieldtype": "Text",
-   "label": "Sub County Summary"
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "identity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "National Identity ",
+   "reqd": 1,
+   "unique": 1
   }
  ],
- "modified": "2020-08-26 01:45:18.578143",
+ "modified": "2020-08-10 00:29:51.268766",
  "modified_by": "Administrator",
  "module": "CISS Management",
- "name": "Sub_Counties",
+ "name": "CISS Group Member",
  "owner": "Administrator",
  "permissions": [
   {
@@ -60,7 +78,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "CISS User",
+   "role": "CISS Manager",
    "share": 1,
    "write": 1
   },
@@ -72,15 +90,15 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "CISS Manager",
+   "role": "CISS User",
    "share": 1,
    "write": 1
   }
  ],
  "quick_entry": 1,
- "search_fields": "sub_county, county",
+ "search_fields": "member_name,identity",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "sub_county",
+ "title_field": "identity",
  "track_changes": 1
 }

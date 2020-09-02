@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ciss_management *.css
+recursive-include ciss_management *.csv
+recursive-include ciss_management *.html
+recursive-include ciss_management *.ico
+recursive-include ciss_management *.js
+recursive-include ciss_management *.json
+recursive-include ciss_management *.md
+recursive-include ciss_management *.png
+recursive-include ciss_management *.py
+recursive-include ciss_management *.svg
+recursive-include ciss_management *.txt
+recursive-exclude ciss_management *.pyc

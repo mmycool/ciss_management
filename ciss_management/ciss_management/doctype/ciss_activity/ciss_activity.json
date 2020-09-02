@@ -1,0 +1,32 @@
+{
+ "autoname": "field:activity_name",
+ "creation": "2020-07-08 12:25:14.836527",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity Name",
+   "options": "Activity Master",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-08-08 16:25:27.011684",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "ciss_activity",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

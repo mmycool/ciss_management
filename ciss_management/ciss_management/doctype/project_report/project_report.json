@@ -1,43 +1,55 @@
 {
- "autoname": "field:sub_county",
- "creation": "2020-06-29 10:33:10.501172",
+ "autoname": "format:CISS-RPT-{MM}-{YY}-{######}",
+ "creation": "2020-08-26 23:44:26.844566",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sub_county",
-  "county",
-  "sub_county_summary"
+  "officer",
+  "project_area",
+  "report_date",
+  "report_section",
+  "report"
  ],
  "fields": [
   {
-   "fieldname": "sub_county",
-   "fieldtype": "Data",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Sub County Name",
-   "reqd": 1,
-   "unique": 1
+   "fieldname": "report_section",
+   "fieldtype": "Section Break",
+   "label": "Report"
   },
   {
-   "fieldname": "county",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "County",
-   "options": "Counties",
+   "fieldname": "report",
+   "fieldtype": "Table",
+   "label": "Report",
+   "options": "Project Reports",
    "reqd": 1
   },
   {
-   "fieldname": "sub_county_summary",
-   "fieldtype": "Text",
-   "label": "Sub County Summary"
+   "fieldname": "officer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Officer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_area",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Area",
+   "options": "Project Areas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
   }
  ],
- "modified": "2020-08-26 01:45:18.578143",
+ "modified": "2020-08-31 00:23:02.212318",
  "modified_by": "Administrator",
  "module": "CISS Management",
- "name": "Sub_Counties",
+ "name": "Project Report",
  "owner": "Administrator",
  "permissions": [
   {
@@ -78,9 +90,7 @@
   }
  ],
  "quick_entry": 1,
- "search_fields": "sub_county, county",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "sub_county",
  "track_changes": 1
 }

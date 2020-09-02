@@ -1,4 +1,5 @@
 {
+ "autoname": "field:group_name",
  "creation": "2020-06-29 12:11:29.439505",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -6,10 +7,14 @@
  "field_order": [
   "group_name",
   "county",
+  "start_date",
+  "column_break_3",
   "sub_county",
   "ward",
-  "gps_location",
-  "activity_name"
+  "grpactivities",
+  "activity_name",
+  "gps_data",
+  "gps_location"
  ],
  "fields": [
   {
@@ -17,7 +22,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Group Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "county",
@@ -48,13 +54,32 @@
    "label": "GPS Location"
   },
   {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gps_data",
+   "fieldtype": "Section Break",
+   "label": "GPS  Data"
+  },
+  {
+   "fieldname": "grpactivities",
+   "fieldtype": "Section Break",
+   "label": "Group Activities"
+  },
+  {
    "fieldname": "activity_name",
-   "fieldtype": "Link",
-   "label": "Group Activities",
-   "options": "Activity Master"
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "ciss_grp_activity"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Group Start Date"
   }
  ],
- "modified": "2020-07-08 00:15:28.019742",
+ "modified": "2020-08-26 23:21:46.571743",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "CISS Group",
@@ -71,10 +96,35 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS User",
+   "share": 1,
+   "write": 1
   }
  ],
- "quick_entry": 1,
+ "search_fields": "group_name, sub_county",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "group_name",
  "track_changes": 1
 }

@@ -1,43 +1,58 @@
 {
- "autoname": "field:sub_county",
- "creation": "2020-06-29 10:33:10.501172",
+ "autoname": "field:area_name",
+ "creation": "2020-08-09 17:22:20.918383",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "area_name",
+  "county_name",
   "sub_county",
-  "county",
-  "sub_county_summary"
+  "corps",
+  "table_5",
+  "project_area_summary"
  ],
  "fields": [
   {
-   "fieldname": "sub_county",
+   "fieldname": "area_name",
    "fieldtype": "Data",
-   "in_filter": 1,
    "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Sub County Name",
+   "label": "Area Name",
    "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "county",
+   "fieldname": "county_name",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "County",
-   "options": "Counties",
-   "reqd": 1
+   "options": "Counties"
   },
   {
-   "fieldname": "sub_county_summary",
+   "fieldname": "sub_county",
+   "fieldtype": "Link",
+   "label": "Sub County",
+   "options": "Sub_Counties"
+  },
+  {
+   "fieldname": "corps",
+   "fieldtype": "Section Break",
+   "label": "Project Area Corps"
+  },
+  {
+   "fieldname": "table_5",
+   "fieldtype": "Table",
+   "options": "project_area_corps"
+  },
+  {
+   "fieldname": "project_area_summary",
    "fieldtype": "Text",
-   "label": "Sub County Summary"
+   "label": "Project Area Summary"
   }
  ],
- "modified": "2020-08-26 01:45:18.578143",
+ "modified": "2020-08-26 13:14:20.348018",
  "modified_by": "Administrator",
  "module": "CISS Management",
- "name": "Sub_Counties",
+ "name": "Project Areas",
  "owner": "Administrator",
  "permissions": [
   {
@@ -49,6 +64,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
    "share": 1,
    "write": 1
   },
@@ -78,9 +105,9 @@
   }
  ],
  "quick_entry": 1,
- "search_fields": "sub_county, county",
+ "search_fields": "area_name,sub_county",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "sub_county",
+ "title_field": "area_name",
  "track_changes": 1
 }

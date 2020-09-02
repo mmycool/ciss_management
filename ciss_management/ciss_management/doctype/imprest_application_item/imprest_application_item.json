@@ -1,0 +1,91 @@
+{
+ "creation": "2020-08-19 12:18:26.831195",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "budeget_line",
+  "column_break_2",
+  "total_cost",
+  "budget_line_balance",
+  "section_break_5",
+  "purpose",
+  "particulars",
+  "column_break_4",
+  "qty",
+  "unit_price",
+  "total_amout"
+ ],
+ "fields": [
+  {
+   "fieldname": "budeget_line",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Budget Line",
+   "options": "Budget",
+   "reqd": 1
+  },
+  {
+   "fieldname": "particulars",
+   "fieldtype": "Small Text",
+   "label": "Particulars (Description)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "label": "Unit Price"
+  },
+  {
+   "fetch_from": "budeget_line.total",
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Budget Line Total Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_line_balance",
+   "fieldtype": "Currency",
+   "label": "Budget Line Balance"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "total_amout",
+   "fieldtype": "Currency",
+   "label": "Total Amout"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-08-22 15:52:18.615433",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Imprest Application Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

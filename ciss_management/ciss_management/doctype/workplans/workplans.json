@@ -1,0 +1,81 @@
+{
+ "creation": "2020-07-24 10:38:08.889375",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "indicator",
+  "time",
+  "activity",
+  "location",
+  "input",
+  "responsibility",
+  "output",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time"
+  },
+  {
+   "columns": 2,
+   "fieldname": "activity",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Activity"
+  },
+  {
+   "columns": 1,
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "input",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Inputs"
+  },
+  {
+   "default": "0",
+   "fieldname": "responsibility",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Responsibility"
+  },
+  {
+   "fieldname": "output",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Output"
+  },
+  {
+   "depends_on": "eval:parent.work_order",
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Comments",
+   "read_only": 1
+  },
+  {
+   "fieldname": "indicator",
+   "fieldtype": "Data",
+   "label": "Project Name/Indicator"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-08-26 23:31:36.991372",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Workplans",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC"
+}

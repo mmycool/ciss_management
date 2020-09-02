@@ -1,0 +1,154 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-08-19 12:41:26.074298",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "posting_date",
+  "attach_proof",
+  "column_break_2",
+  "imprest_holder_name",
+  "employee_name",
+  "section_break_4",
+  "accounting_entry",
+  "reference_section",
+  "imprest_application",
+  "imprest_application_date",
+  "column_break_11",
+  "journal_entry",
+  "journal_entry_date",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CISS-IMP-SUR-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "imprest_application.requested_by",
+   "fieldname": "imprest_holder_name",
+   "fieldtype": "Link",
+   "label": "Imprest Holder",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "accounting_entry",
+   "fieldtype": "Table",
+   "label": "Accounting Entry",
+   "options": "Journal Entry Account"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "imprest_holder_name.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Imprest Holder Name"
+  },
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fetch_from": "journal_entry.imprest_application",
+   "fieldname": "imprest_application",
+   "fieldtype": "Link",
+   "label": "Imprest Application",
+   "options": "Imprest Application"
+  },
+  {
+   "fetch_from": "imprest_application.date",
+   "fieldname": "imprest_application_date",
+   "fieldtype": "Date",
+   "label": "Imprest Application Date"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Imprest Surrender",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted"
+  },
+  {
+   "fieldname": "attach_proof",
+   "fieldtype": "Attach",
+   "label": "Attach Proof"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "journal_entry",
+   "fieldtype": "Link",
+   "label": "Journal Entry",
+   "options": "Journal Entry"
+  },
+  {
+   "fetch_from": "journal_entry.posting_date",
+   "fieldname": "journal_entry_date",
+   "fieldtype": "Date",
+   "label": "Journal Entry Date"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-08-25 11:03:08.990408",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Imprest Surrender",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
