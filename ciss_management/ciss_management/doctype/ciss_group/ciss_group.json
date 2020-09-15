@@ -12,7 +12,7 @@
   "sub_county",
   "ward",
   "grpactivities",
-  "activity_name",
+  "activities",
   "gps_data",
   "gps_location"
  ],
@@ -68,18 +68,18 @@
    "label": "Group Activities"
   },
   {
-   "fieldname": "activity_name",
-   "fieldtype": "Table",
-   "label": "Activities",
-   "options": "ciss_grp_activity"
-  },
-  {
    "fieldname": "start_date",
    "fieldtype": "Date",
    "label": "Group Start Date"
+  },
+  {
+   "fieldname": "activities",
+   "fieldtype": "Table MultiSelect",
+   "label": "Activities",
+   "options": "ciss_grp_activity"
   }
  ],
- "modified": "2020-08-26 23:21:46.571743",
+ "modified": "2020-09-11 22:29:31.459597",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "CISS Group",

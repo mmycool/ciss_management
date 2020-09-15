@@ -7,6 +7,7 @@
  "field_order": [
   "member_name",
   "member_id",
+  "member_dob",
   "membership_date",
   "phone_number",
   "column_break_3",
@@ -52,7 +53,7 @@
   {
    "columns": 2,
    "fieldname": "activity_name",
-   "fieldtype": "Table",
+   "fieldtype": "Table MultiSelect",
    "in_standard_filter": 1,
    "label": "Activities",
    "options": "ciss_activity"
@@ -83,9 +84,14 @@
    "fieldtype": "Select",
    "label": "Gender",
    "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "member_dob",
+   "fieldtype": "Date",
+   "label": "Member Date of Birth"
   }
  ],
- "modified": "2020-08-26 13:40:51.075835",
+ "modified": "2020-09-10 01:26:05.811888",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "CISS Group Membership",

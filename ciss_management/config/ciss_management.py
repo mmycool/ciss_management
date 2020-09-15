@@ -74,6 +74,11 @@ def get_data():
 					"name": "CISS Group Membership",
 					"description": _("Membership information."),
 				},
+                                {
+                                        "type": "doctype",
+                                        "name": "Learning Institutions",
+                                        "description": _("Learning Institution Groups."),
+                                },
 				{
 					"type": "doctype",
 					"name": "Activity Master",

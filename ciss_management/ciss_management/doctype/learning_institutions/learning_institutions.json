@@ -1,0 +1,135 @@
+{
+ "autoname": "field:institution",
+ "creation": "2020-09-10 00:47:48.234405",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "institution",
+  "contact_person",
+  "contact_person_phone_number",
+  "column_break_4",
+  "county",
+  "sub_county",
+  "ward",
+  "institution_activities_section",
+  "activity_name",
+  "population_section",
+  "male",
+  "female",
+  "map_section",
+  "location",
+  "summary"
+ ],
+ "fields": [
+  {
+   "fieldname": "institution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institution",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Person Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_person_phone_number",
+   "fieldtype": "Data",
+   "label": "Contact Person Phone Number"
+  },
+  {
+   "fieldname": "institution_activities_section",
+   "fieldtype": "Section Break",
+   "label": "Institution Activities"
+  },
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Table MultiSelect",
+   "label": "Activities",
+   "options": "ciss_activity"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_county",
+   "fieldtype": "Link",
+   "label": "Sub County",
+   "options": "Sub_Counties",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "label": "Ward",
+   "options": "Ward",
+   "reqd": 1
+  },
+  {
+   "fieldname": "population_section",
+   "fieldtype": "Section Break",
+   "label": "Population"
+  },
+  {
+   "fieldname": "male",
+   "fieldtype": "Data",
+   "label": "Male"
+  },
+  {
+   "fieldname": "female",
+   "fieldtype": "Data",
+   "label": "Female"
+  },
+  {
+   "fieldname": "map_section",
+   "fieldtype": "Section Break",
+   "label": "Map"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Text Editor",
+   "label": "Institution Summary"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "Counties",
+   "reqd": 1
+  }
+ ],
+ "modified": "2020-09-13 23:35:25.046267",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Learning Institutions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
