@@ -1,5 +1,5 @@
 {
- "autoname": "field:member_name",
+ "autoname": "format:CISS-MEM-{YY}-{#####}",
  "creation": "2020-07-11 03:51:55.485899",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -63,8 +63,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Member Name",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "member_id",
@@ -91,7 +90,7 @@
    "label": "Member Date of Birth"
   }
  ],
- "modified": "2020-09-10 01:26:05.811888",
+ "modified": "2020-09-24 12:29:05.906001",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "CISS Group Membership",
@@ -134,7 +133,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "search_fields": "member_name,member_id",
  "sort_field": "modified",
  "sort_order": "DESC",

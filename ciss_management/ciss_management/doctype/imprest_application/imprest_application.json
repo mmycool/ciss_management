@@ -16,12 +16,13 @@
   "purpose",
   "column_break_10",
   "imprest_amout",
+  "ww_section",
+  "items",
   "section_break_12",
   "budget_line",
   "section_break_9",
   "remarks",
   "column_break_11",
-  "status",
   "amended_from"
  ],
  "fields": [
@@ -90,12 +91,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Draft\nSubmitted"
-  },
-  {
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
@@ -129,10 +124,20 @@
    "label": "Budget Line",
    "options": "Budget",
    "permlevel": 1
+  },
+  {
+   "fieldname": "ww_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Imprest Account",
+   "options": "Imprest Account"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-09-09 23:43:37.452045",
+ "modified": "2020-09-24 14:57:34.019730",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Imprest Application",
@@ -175,7 +180,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

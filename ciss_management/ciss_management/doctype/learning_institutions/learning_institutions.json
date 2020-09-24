@@ -109,7 +109,7 @@
    "reqd": 1
   }
  ],
- "modified": "2020-09-13 23:35:25.046267",
+ "modified": "2020-09-21 20:34:37.447054",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Learning Institutions",
@@ -124,6 +124,30 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS User",
    "share": 1,
    "write": 1
   }

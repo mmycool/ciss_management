@@ -46,7 +46,7 @@
    "label": "Report Date"
   }
  ],
- "modified": "2020-08-31 00:23:02.212318",
+ "modified": "2020-09-22 12:28:28.421717",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Project Report",
@@ -89,7 +89,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

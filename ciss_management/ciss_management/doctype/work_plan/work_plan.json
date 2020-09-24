@@ -116,7 +116,7 @@
    "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-08-26 01:53:39.844539",
+ "modified": "2020-09-22 12:28:51.275682",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Work Plan",
@@ -171,7 +171,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
