@@ -9,7 +9,9 @@
   "project_area",
   "report_date",
   "report_section",
-  "report"
+  "report",
+  "section_break_6",
+  "photos"
  ],
  "fields": [
   {
@@ -44,9 +46,19 @@
    "fieldname": "report_date",
    "fieldtype": "Date",
    "label": "Report Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "photos",
+   "fieldtype": "Attach Image",
+   "label": "Report Photos"
   }
  ],
- "modified": "2020-09-22 12:28:28.421717",
+ "image_field": "photos",
+ "modified": "2020-10-29 14:20:51.481448",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Project Report",
@@ -85,6 +97,18 @@
    "read": 1,
    "report": 1,
    "role": "CISS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO",
    "share": 1,
    "write": 1
   }

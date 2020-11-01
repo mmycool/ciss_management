@@ -11,6 +11,7 @@
   "employee_name",
   "column_break_2",
   "date",
+  "project_name",
   "project_area",
   "section_break_6",
   "purpose",
@@ -134,10 +135,16 @@
    "fieldtype": "Table",
    "label": "Imprest Account",
    "options": "Imprest Account"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-09-24 14:57:34.019730",
+ "modified": "2020-10-28 13:47:55.520481",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Imprest Application",
@@ -177,6 +184,19 @@
    "report": 1,
    "role": "CISS Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO",
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

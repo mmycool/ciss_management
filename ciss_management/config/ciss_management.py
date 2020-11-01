@@ -32,7 +32,12 @@ def get_data():
 										"type": "doctype",
 										"name": "Imprest Surrender",
 										"description": _("Description of Imprest Surrender"),
-								}
+								},
+                              {
+                                        "type": "doctype",
+                                        "name": "Payment Voucher",
+                                        "description": _("Payment voucher for the imprests."),
+                                }
                         ]
                 },
 		{

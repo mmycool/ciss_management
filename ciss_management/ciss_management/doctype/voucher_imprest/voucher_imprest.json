@@ -1,0 +1,50 @@
+{
+ "creation": "2020-10-25 14:41:25.184785",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "imprest_application",
+  "purposes",
+  "employees_name",
+  "imprest_amounts"
+ ],
+ "fields": [
+  {
+   "fieldname": "imprest_application",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Imprest",
+   "options": "Imprest Application"
+  },
+  {
+   "fieldname": "purposes",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "employees_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee"
+  },
+  {
+   "fieldname": "imprest_amounts",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-10-26 22:36:30.389340",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "voucher_imprest",
+ "nsm_parent_field": "parent_voucher_imprest",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
