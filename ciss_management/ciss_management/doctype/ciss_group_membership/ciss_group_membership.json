@@ -90,7 +90,7 @@
    "label": "Member Date of Birth"
   }
  ],
- "modified": "2020-09-24 12:29:05.906001",
+ "modified": "2020-11-20 15:01:25.508951",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "CISS Group Membership",
@@ -136,6 +136,5 @@
  "search_fields": "member_name,member_id",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "member_name",
  "track_changes": 1
 }

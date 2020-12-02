@@ -116,7 +116,7 @@
    "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-09-22 12:28:51.275682",
+ "modified": "2020-12-01 23:38:45.611562",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Work Plan",
@@ -169,8 +169,21 @@
    "role": "CISS Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO",
+   "share": 1,
+   "write": 1
   }
  ],
+ "search_fields": "user, area_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

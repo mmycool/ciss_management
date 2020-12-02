@@ -7,6 +7,7 @@
  "field_order": [
   "officer",
   "project_area",
+  "work_plan",
   "report_date",
   "report_section",
   "report",
@@ -55,10 +56,16 @@
    "fieldname": "photos",
    "fieldtype": "Attach Image",
    "label": "Report Photos"
+  },
+  {
+   "fieldname": "work_plan",
+   "fieldtype": "Link",
+   "label": "Work Plan",
+   "options": "Work Plan"
   }
  ],
  "image_field": "photos",
- "modified": "2020-10-29 14:20:51.481448",
+ "modified": "2020-11-20 11:24:01.446293",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Project Report",
