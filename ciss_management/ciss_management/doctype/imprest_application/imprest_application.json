@@ -1,12 +1,13 @@
 {
+ "actions": [],
  "autoname": "naming_series:",
  "creation": "2020-08-19 12:12:36.525857",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "naming_series",
   "company",
+  "naming_series",
   "requested_by",
   "employee_name",
   "column_break_2",
@@ -144,7 +145,8 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-28 13:47:55.520481",
+ "links": [],
+ "modified": "2021-01-21 09:28:33.678710",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Imprest Application",
@@ -198,8 +200,21 @@
    "share": 1,
    "submit": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Approver",
+   "share": 1,
+   "write": 1
   }
  ],
+ "search_fields": "project_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
