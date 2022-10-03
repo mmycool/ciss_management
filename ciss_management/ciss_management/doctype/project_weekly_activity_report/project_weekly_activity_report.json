@@ -1,0 +1,377 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CISS-WRPT-{project}-{YY}-{MM}-{#####}",
+ "creation": "2021-11-13 23:53:11.621280",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "submitted_by",
+  "project",
+  "activity_topic",
+  "date",
+  "activity_hours",
+  "column_break_6",
+  "trainer_name",
+  "county",
+  "sub_county",
+  "ward",
+  "partcipantbeneficiary_breakdown_section",
+  "male_farmers",
+  "female_farmers",
+  "pwd_farmers",
+  "under_35_farmers",
+  "over35_farmers",
+  "male_youth",
+  "female_youth",
+  "pwd_youth",
+  "male_trainers",
+  "female_trainers",
+  "pwd_trainers",
+  "column_break_23",
+  "male_partners",
+  "female_partners",
+  "pwd_partners",
+  "unde35_partners",
+  "over35_partners",
+  "male_gov_officials",
+  "female_gov_officials",
+  "pwd_gov_officials",
+  "under35_gov_officials",
+  "over35_gov_officials",
+  "activity_details_section",
+  "activity_purpose",
+  "activity_agenda",
+  "activity_help_to_address",
+  "activity_went_well",
+  "not_go_well",
+  "achieved_outputs",
+  "other_aspects",
+  "data_collected",
+  "follow_up",
+  "data_tool",
+  "attachments_annexes_about_the_activitymission_section",
+  "pictures"
+ ],
+ "fields": [
+  {
+   "fieldname": "submitted_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Submitted By",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activity_topic",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity Topic",
+   "options": "Activity Topic",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "activity_hours",
+   "fieldtype": "Data",
+   "label": "Number of Activity Hours"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "label": "Trainer Name"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "Counties"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "label": "Ward",
+   "options": "Ward"
+  },
+  {
+   "fieldname": "partcipantbeneficiary_breakdown_section",
+   "fieldtype": "Section Break",
+   "label": "Partcipant/Beneficiary Breakdown"
+  },
+  {
+   "fieldname": "male_farmers",
+   "fieldtype": "Int",
+   "label": "Male Farmers"
+  },
+  {
+   "fieldname": "female_farmers",
+   "fieldtype": "Int",
+   "label": "Female Farmers"
+  },
+  {
+   "fieldname": "pwd_farmers",
+   "fieldtype": "Int",
+   "label": "PWD Farmers"
+  },
+  {
+   "fieldname": "under_35_farmers",
+   "fieldtype": "Int",
+   "label": "Farmers Under 35 Years"
+  },
+  {
+   "fieldname": "over35_farmers",
+   "fieldtype": "Int",
+   "label": "Farmers Over 35 Years"
+  },
+  {
+   "fieldname": "male_youth",
+   "fieldtype": "Int",
+   "label": "Male Youth"
+  },
+  {
+   "fieldname": "female_youth",
+   "fieldtype": "Int",
+   "label": "Female Youth"
+  },
+  {
+   "fieldname": "pwd_youth",
+   "fieldtype": "Int",
+   "label": "PWD Youth"
+  },
+  {
+   "fieldname": "male_trainers",
+   "fieldtype": "Int",
+   "label": "Male Trainers"
+  },
+  {
+   "fieldname": "female_trainers",
+   "fieldtype": "Int",
+   "label": "Female Trainers"
+  },
+  {
+   "fieldname": "pwd_trainers",
+   "fieldtype": "Int",
+   "label": "PWD Trainers"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "male_partners",
+   "fieldtype": "Int",
+   "label": "Male Partners"
+  },
+  {
+   "fieldname": "female_partners",
+   "fieldtype": "Int",
+   "label": "Female Partners"
+  },
+  {
+   "fieldname": "pwd_partners",
+   "fieldtype": "Int",
+   "label": "PWD Partners"
+  },
+  {
+   "fieldname": "unde35_partners",
+   "fieldtype": "Int",
+   "label": "Under 35 Partners"
+  },
+  {
+   "fieldname": "over35_partners",
+   "fieldtype": "Int",
+   "label": "Over 35 Partners"
+  },
+  {
+   "fieldname": "male_gov_officials",
+   "fieldtype": "Int",
+   "label": "Male Government Officials"
+  },
+  {
+   "fieldname": "female_gov_officials",
+   "fieldtype": "Int",
+   "label": "Female Government Officials"
+  },
+  {
+   "fieldname": "pwd_gov_officials",
+   "fieldtype": "Int",
+   "label": "PWD Government Officials"
+  },
+  {
+   "fieldname": "under35_gov_officials",
+   "fieldtype": "Int",
+   "label": "Under 35 Government Officials"
+  },
+  {
+   "fieldname": "over35_gov_officials",
+   "fieldtype": "Int",
+   "label": "Over 35 Government Officials"
+  },
+  {
+   "fieldname": "activity_details_section",
+   "fieldtype": "Section Break",
+   "label": "Activity Details"
+  },
+  {
+   "fieldname": "activity_purpose",
+   "fieldtype": "Text Editor",
+   "label": "Purpose of Project Activity"
+  },
+  {
+   "fieldname": "activity_agenda",
+   "fieldtype": "Text Editor",
+   "label": "Summary of Activity Agenda"
+  },
+  {
+   "fieldname": "activity_help_to_address",
+   "fieldtype": "Text Editor",
+   "label": "What needs did this activity help to address and how did this activity help work towards the project objective?  "
+  },
+  {
+   "fieldname": "activity_went_well",
+   "fieldtype": "Text Editor",
+   "label": "What went well during the activity?"
+  },
+  {
+   "fieldname": "not_go_well",
+   "fieldtype": "Text Editor",
+   "label": "What did not go well? What did you learn from the activity for the future activities?"
+  },
+  {
+   "fieldname": "achieved_outputs",
+   "fieldtype": "Text Editor",
+   "label": "What outputs were achieved? "
+  },
+  {
+   "fieldname": "other_aspects",
+   "fieldtype": "Text Editor",
+   "label": "What other aspects of this activity do you think is important to record? "
+  },
+  {
+   "default": "YES",
+   "fieldname": "data_collected",
+   "fieldtype": "Select",
+   "label": "Did you collect data during activity? ",
+   "options": "YES\nNO"
+  },
+  {
+   "default": "YES",
+   "fieldname": "follow_up",
+   "fieldtype": "Select",
+   "label": "Is there follow up required? ",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "data_tool",
+   "fieldtype": "Data",
+   "label": "What tool was used to collect the data?"
+  },
+  {
+   "fieldname": "attachments_annexes_about_the_activitymission_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments /Annexes about the activity/mission"
+  },
+  {
+   "fieldname": "pictures",
+   "fieldtype": "Attach Image",
+   "label": "Pictures"
+  },
+  {
+   "fieldname": "sub_county",
+   "fieldtype": "Link",
+   "label": "Sub County",
+   "options": "Sub_Counties"
+  }
+ ],
+ "image_field": "pictures",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "max_attachments": 5,
+ "modified": "2022-04-12 08:31:04.307699",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Project Weekly Activity Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR approver",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

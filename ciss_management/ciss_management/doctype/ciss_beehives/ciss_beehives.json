@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-15 23:27:56.489886",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hive_serial",
+  "farmer_name",
+  "county",
+  "sub_county",
+  "ward",
+  "condition"
+ ],
+ "fields": [
+  {
+   "fieldname": "hive_serial",
+   "fieldtype": "Data",
+   "label": "Beehive Serial"
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer Champions"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "Counties"
+  },
+  {
+   "fieldname": "sub_county",
+   "fieldtype": "Link",
+   "label": "Sub County",
+   "options": "Sub_Counties"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "label": "Ward",
+   "options": "Ward"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "label": "Condition",
+   "options": "Working\nDamaged"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-19 16:01:33.653845",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "CISS Beehives",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR approver",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "farmer_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "hive_serial",
+ "track_changes": 1
+}

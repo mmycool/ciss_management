@@ -16,6 +16,7 @@
   "total_amount",
   "refs",
   "cheque_number",
+  "payee",
   "column_break_10",
   "bank",
   "amended_from"
@@ -98,11 +99,18 @@
    "options": "Payment Voucher",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "payee",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payee"
   }
  ],
+ "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-01-18 14:02:27.494985",
+ "modified": "2022-03-08 16:43:28.023393",
  "modified_by": "Administrator",
  "module": "CISS Management",
  "name": "Payment Voucher",

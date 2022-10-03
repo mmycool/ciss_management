@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CISS-QPRT-{project}-{YYYY}-{MM}-{#####}",
+ "creation": "2021-11-14 17:28:21.791532",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "employee_name",
+  "date",
+  "column_break_4",
+  "county",
+  "sub_county",
+  "ward",
+  "section_break_8",
+  "project_summary",
+  "quarterly_summary",
+  "quarterly_milestones",
+  "project_goals",
+  "status_update",
+  "data_security",
+  "key_issues",
+  "best_practices",
+  "sustainability",
+  "additional_information"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "label": "Submitted By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "Counties"
+  },
+  {
+   "fieldname": "sub_county",
+   "fieldtype": "Link",
+   "label": "Sub County",
+   "options": "Sub_Counties"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "label": "Ward",
+   "options": "Ward"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_summary",
+   "fieldtype": "Small Text",
+   "label": "Project Summary"
+  },
+  {
+   "fieldname": "quarterly_summary",
+   "fieldtype": "Text Editor",
+   "label": "Summary of Quarterly Activities"
+  },
+  {
+   "fieldname": "quarterly_milestones",
+   "fieldtype": "Table",
+   "label": "Timeline Project milestones, activities, and deliverables",
+   "options": "Quarterly Milestone Table"
+  },
+  {
+   "fieldname": "project_goals",
+   "fieldtype": "Text Editor",
+   "label": "Project Goals for Next Quarter"
+  },
+  {
+   "fieldname": "status_update",
+   "fieldtype": "Text Editor",
+   "label": "Status update on partnership activities"
+  },
+  {
+   "fieldname": "data_security",
+   "fieldtype": "Text Editor",
+   "label": "Data security and linkages"
+  },
+  {
+   "fieldname": "key_issues",
+   "fieldtype": "Table",
+   "label": "Key Issues and Technical Assistance Needs",
+   "options": "Quarterly Key Issues Table"
+  },
+  {
+   "fieldname": "best_practices",
+   "fieldtype": "Table",
+   "label": "Best Practices and Lessons Learned",
+   "options": "Quarterly Best Practices Table"
+  },
+  {
+   "fieldname": "sustainability",
+   "fieldtype": "Text Editor",
+   "label": "Sustainability"
+  },
+  {
+   "fieldname": "additional_information",
+   "fieldtype": "Text Editor",
+   "label": "Additional Information"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-19 10:24:33.628963",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Quarterly Project Progress",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR approver",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

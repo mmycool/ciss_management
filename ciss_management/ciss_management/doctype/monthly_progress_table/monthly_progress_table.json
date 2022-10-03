@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-14 14:21:25.052413",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "outputs",
+  "planned_activities",
+  "results_achieved",
+  "plan_of_action"
+ ],
+ "fields": [
+  {
+   "fieldname": "outputs",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Output"
+  },
+  {
+   "fieldname": "planned_activities",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Planned activities for the month"
+  },
+  {
+   "fieldname": "results_achieved",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Result Achieved/Immediate Result."
+  },
+  {
+   "fieldname": "plan_of_action",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Plan of action for next month"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-14 14:30:48.685914",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Monthly Progress Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

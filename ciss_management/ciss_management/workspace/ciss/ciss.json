@@ -1,0 +1,143 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "CISS Group Membership",
+   "label": "CISS Group Membership"
+  },
+  {
+   "chart_name": "CISS Groups",
+   "label": "CISS Groups Per Region"
+  },
+  {
+   "chart_name": "Learning Institutions Per Sub County",
+   "label": "Learning Institutions/ Sub-county"
+  }
+ ],
+ "creation": "2020-11-02 12:08:39.168818",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "CISS",
+ "links": [],
+ "modified": "2022-08-02 10:27:22.486074",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "CISS",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "label": "Work Plan",
+   "link_to": "Work Plan",
+   "type": "DocType"
+  },
+  {
+   "label": "Project Report",
+   "link_to": "Project Report",
+   "type": "DocType"
+  },
+  {
+   "label": "Imprest Application",
+   "link_to": "Imprest Application",
+   "type": "DocType"
+  },
+  {
+   "label": "Imprest Surrender",
+   "link_to": "Imprest Surrender",
+   "type": "DocType"
+  },
+  {
+   "label": "Payment Voucher",
+   "link_to": "Payment Voucher",
+   "type": "DocType"
+  },
+  {
+   "label": "Counties",
+   "link_to": "Counties",
+   "type": "DocType"
+  },
+  {
+   "label": "Sub Counties",
+   "link_to": "Sub_Counties",
+   "type": "DocType"
+  },
+  {
+   "label": "Wards",
+   "link_to": "Ward",
+   "type": "DocType"
+  },
+  {
+   "label": "CISS Groups",
+   "link_to": "CISS Group",
+   "type": "DocType"
+  },
+  {
+   "color": "#cef6d1",
+   "format": "{} Active",
+   "label": "CISS Group Membership",
+   "link_to": "CISS Group Membership",
+   "stats_filter": "{\"membership_status\":\"Active\"}",
+   "type": "DocType"
+  },
+  {
+   "label": "Learning Institutions",
+   "link_to": "Learning Institutions",
+   "type": "DocType"
+  },
+  {
+   "label": "Possible Activities",
+   "link_to": "Activity Master",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Project Weekly Activity Report",
+   "link_to": "Project Weekly Activity Report",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Exchange Visit Reports",
+   "link_to": "Exchange Visits",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Quarterly Project Progress Report",
+   "link_to": "Quarterly Project Progress",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Activity Topics",
+   "link_to": "Activity Topic",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "CISS Farmer Champions",
+   "link_to": "Farmer Champions",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "CISS Beehives",
+   "link_to": "CISS Beehives",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Beehives Harvest Log",
+   "link_to": "Beehives Harvest Log",
+   "type": "DocType"
+  }
+ ]
+}

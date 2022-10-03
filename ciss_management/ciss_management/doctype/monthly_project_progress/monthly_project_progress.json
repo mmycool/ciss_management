@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CISS-MPP-{project_title}-{YYYY}-{MM}-{#####}",
+ "creation": "2021-11-14 14:02:02.112410",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_title",
+  "implementation_period",
+  "county_name",
+  "sub_county",
+  "ward",
+  "column_break_3",
+  "date",
+  "employee",
+  "quantitative_achievements_by_key_focus_area_section",
+  "achievements",
+  "section_break_8",
+  "activity_list",
+  "actvities_next_month",
+  "attachments_annexes_section",
+  "report",
+  "participants",
+  "pictures"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_title",
+   "fieldtype": "Link",
+   "label": "Project Title",
+   "options": "Project"
+  },
+  {
+   "fieldname": "implementation_period",
+   "fieldtype": "Data",
+   "label": "Project Implementation Period"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Submitted By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "quantitative_achievements_by_key_focus_area_section",
+   "fieldtype": "Section Break",
+   "label": "QUANTITATIVE ACHIEVEMENTS BY KEY FOCUS AREA"
+  },
+  {
+   "fieldname": "achievements",
+   "fieldtype": "Table",
+   "label": "Achievements",
+   "options": "Monthly Progress Table"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "activity_list",
+   "fieldtype": "Long Text",
+   "label": "List of activities planned for the month but not implemented (provide a brief explanation for not implementing the activities)"
+  },
+  {
+   "fieldname": "actvities_next_month",
+   "fieldtype": "Long Text",
+   "label": "List activities to be implemented in the next month"
+  },
+  {
+   "fieldname": "attachments_annexes_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments /Annexes"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Attach",
+   "label": "Report"
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Attach",
+   "label": "List of Participants"
+  },
+  {
+   "fieldname": "pictures",
+   "fieldtype": "Attach Image",
+   "label": "Pictures"
+  },
+  {
+   "fieldname": "sub_county",
+   "fieldtype": "Link",
+   "label": "Sub County",
+   "options": "Sub_Counties"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "label": "Ward",
+   "options": "Ward"
+  },
+  {
+   "fieldname": "county_name",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "Counties"
+  }
+ ],
+ "image_field": "pictures",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "max_attachments": 5,
+ "modified": "2022-04-12 08:31:48.523505",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Monthly Project Progress",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CISS User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR approver",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

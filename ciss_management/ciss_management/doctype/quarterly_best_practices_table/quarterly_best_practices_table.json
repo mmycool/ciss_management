@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-14 17:06:13.578613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "practice_area",
+  "description_of_practice"
+ ],
+ "fields": [
+  {
+   "fieldname": "practice_area",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Practice Area"
+  },
+  {
+   "fieldname": "description_of_practice",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description of Practice"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-14 17:38:26.201698",
+ "modified_by": "Administrator",
+ "module": "CISS Management",
+ "name": "Quarterly Best Practices Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
